@@ -1,0 +1,8 @@
+.comment-container{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    margin: 50px;
+}

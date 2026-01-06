@@ -1,0 +1,411 @@
+/* ================= RESET ================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ================= LAYOUT ================= */
+
+.collection-container {
+  max-width: 1512px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ================= HERO ================= */
+
+.denim-collection {
+  display: flex;
+  height: 852px;
+}
+
+.collection {
+  width: 1005px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection-card {
+  width: 507px;
+  background: #ececec;
+  padding: 60px;
+}
+
+.collection-card h1 {
+  font-size: 72px;
+  margin-top: 220px;
+}
+
+.collection-card p {
+  font-size: 22px;
+  margin-top: 40px;
+  max-width: 390px;
+}
+
+.btn-groups {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.view-btn,
+.buy-btn {
+  flex: 1;
+  height: 70px;
+  font-size: 22px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.view-btn:hover,
+.buy-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ================= COLLECTION IMAGES ================= */
+
+.collection-images {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ================= TRANDING ================= */
+
+.tranding {
+  width: 1412px;
+}
+
+.tranding h1 {
+  font-size: 27px;
+}
+
+.tranding-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.tranding-card {
+  flex: 1;
+}
+
+.tranding-photo {
+  width: 100%;
+  height: 457px;
+  object-fit: cover;
+}
+
+.tranding-card p {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* ================= SHOP ================= */
+
+.shop-card {
+  width: 1412px;
+  display: flex;
+  gap: 20px;
+  margin-top: 150px;
+}
+
+.shop-photo {
+  width: 50%;
+  height: 500px;
+  object-fit: cover;
+}
+
+/* ================= POPULAR ================= */
+
+.popular-container {
+  width: 100%;
+  margin-top: 150px;
+}
+
+.popular-container h1 {
+  text-align: center;
+}
+
+.popular-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.popular-card {
+  width: 338px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+/* 🔥 MUHIM — small rasm muammosi HAL QILINDI */
+.small-photos {
+  width: 170px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.popular-photo-small {
+  width: 32px;
+  height: 40px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.small-photos p {
+  font-size: 16px;
+  color: gray;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.popular-card > p {
+  font-size: 18px;
+  color: rgb(177, 61, 3);
+  margin-top: 10px;
+}
+
+.popular-card h3 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.popular-card h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* ================= DRESSES ================= */
+
+.dresses-collection {
+  width: 1412px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.collection-title {
+  max-width: 480px;
+}
+
+.collection-title h1 {
+  font-size: 54px;
+  font-weight: 500;
+}
+
+.collection-title p {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.collection-photo {
+  width: 696px;
+  height: auto;
+}
+
+/* ================= CATEGORY ================= */
+
+.category-dress {
+  width: 907px;
+  display: flex;
+  justify-content: space-between;
+  margin: 150px auto;
+}
+
+.category-dress h1 {
+  font-size: 24px;
+}
+
+.category-dress ul {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.category-dress li {
+  list-style: none;
+}
+
+.category-dress a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+/* ===== CATEGORY LINK HOVER EFFECT ===== */
+
+.category-dress a {
+  position: relative;              /* underline uchun */
+  padding-bottom: 4px;             /* chiziq bilan masofa */
+  transition: color 0.3s ease;
+}
+
+/* underline chiziq */
+.category-dress a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width 0.4s ease;     /* 🔥 sekin chiqadi */
+}
+
+/* hover holat */
+.category-dress a:hover::after {
+  width: 100%;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 1199px) {
+  .collection {
+    width: 60%;
+  }
+
+  .collection-card h1 {
+    font-size: 56px;
+  }
+
+   .tranding,
+  .shop-card,
+  .dresses-collection {
+    width: 95%;
+  }
+}
+
+/* ================= TABLET SMALL ================= */
+
+@media (max-width: 991px) {
+  .denim-collection {
+    height: auto;
+  }
+
+  .collection-card h1 {
+    margin-top: 120px;
+    font-size: 48px;
+  }
+
+  .tranding-cards {
+    flex-wrap: wrap;
+  }
+
+  .tranding-card {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 767px) {
+
+  .denim-collection {
+    flex-direction: column;
+  }
+
+  .collection {
+    width: 100%;
+    height: auto;
+  }
+
+  .collection-card {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .collection-card h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .collection-card p {
+    font-size: 18px;
+  }
+
+  .btn-groups {
+    flex-direction: column;
+  }
+
+  .tranding-cards {
+    flex-direction: column;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .tranding-card {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shop-card {
+    flex-direction: column;
+  }
+
+  .shop-photo {
+    width: 100%;
+  }
+
+  .popular-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popular-card {
+    width: 90%;
+  }
+
+  .dresses-collection {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .collection-title h1 {
+    font-size: 36px;
+  }
+
+  .category-dress {
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
